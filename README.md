@@ -42,7 +42,7 @@ The script provides the following basic folder structures for the two types of p
 To get started, clone the repository and run the script:
 
 ```bash
-git clone https://github.com/JayRyz/RedPenStrux.git
+git clone https://github.com/JayRyz/RedPenStrux
 cd RedPenStrux
 chmod +x redpenstrux.sh
 ./redpenstrux.sh
