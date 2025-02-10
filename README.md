@@ -7,23 +7,32 @@ This project is meant to save time when starting a new assessment and to help st
 ## Features:
 - Automatically creates folder structures for Red Team and Penetration Testing projects.
 - Provides example (empty) files to guide you through the typical stages of a security engagement (e.g., reconnaissance, exploitation, reporting).
-- Supports multiple target devices by allowing you to create separate folders for each target (e.g., IP addresses).
-  
+- Supports creating multiple target-specific folder structures (e.g., by IP address or machine name).
+- Allows you to generate folder structures with or without example files.
+- Customizable path for folder creation.
+
 ## Structure:
 The script provides the following basic folder structures for the two types of projects:
 
 ### Red Team Project Structure:
-- `00_Project_Details/README.txt`
+- `Network/nmap_network_scan.txt`
+- `Project_Details/README.txt`
+- `Project_Details/scope.txt`
 - `01_Intelligence_Gathering/intel_notes.txt`
-- `02_Initial_Access/initial_access.txt`
+- `02_Initial_Access/phishing_campaigns`
+- `02_Initial_Access/web_exploits`
+- `02_Initial_Access/bruteforce`
 - `03_C2_Infrastructure/c2_setup.txt`
 - `04_Internal_Enumeration/internal_enum.txt`
-- `05_Privilege_Escalation/priv_esc_notes.txt`
+- `05_Privilege_Escalation/Windows`
+- `05_Privilege_Escalation/Linux`
 - `06_Action_On_Objectives/action_plan.txt`
 - `07_Reporting/redteam_report.md`
 
 ### Penetration Testing Project Structure:
-- `00_Project_Details/README.txt`
+- `Network/nmap_network_scan.txt`
+- `Project_Details/README.txt`
+- `Project_Details/scope.txt`
 - `01_Reconnaissance/Active/active_scan_results.txt`
 - `01_Reconnaissance/Passive/passive_scan_results.txt`
 - `02_Scanning/nmap_scan.txt`
@@ -42,7 +51,7 @@ The script provides the following basic folder structures for the two types of p
 To get started, clone the repository and run the script:
 
 ```bash
-git clone https://github.com/JayRyz/RedPenStrux
+git clone https://github.com/JayRyz/RedPenStrux.git
 cd RedPenStrux
 chmod +x redpenstrux.sh
 ./redpenstrux.sh
